@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #1a1a2e; display: flex; justify-content: center; align-items: center; height: 100vh; overflow: hidden; }
+.sun { width: 200px; height: 200px; background: radial-gradient(circle, #f9d71c, #f38181); border-radius: 50%; position: relative; animation: pulse 3s ease-in-out infinite; box-shadow: 0 0 60px #f9d71c, 0 0 120px #f38181; }
+@keyframes pulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.05); } }
+.mountain1 { position: absolute; bottom: 0; left: -10%; width: 0; height: 0; border-left: 300px solid transparent; border-right: 300px solid transparent; border-bottom: 400px solid #16213e; }
+.mountain2 { position: absolute; bottom: 0; right: -10%; width: 0; height: 0; border-left: 250px solid transparent; border-right: 250px solid transparent; border-bottom: 350px solid #0f3460; }
+.stars { position: absolute; top: 20px; left: 50px; width: 4px; height: 4px; background: white; border-radius: 50%; box-shadow: 80px 30px white, 200px 60px white, 300px 20px white, 400px 80px white, 150px 100px white, 500px 40px white, 600px 90px white, 50px 150px white, 250px 130px white, 450px 160px white, 350px 110px white, 550px 140px white; }
+</style>
+</head>
+<body>
+  <div class="sun"></div>
+  <div class="mountain1"></div>
+  <div class="mountain2"></div>
+  <div class="stars"></div>
+</body>
+</html>
